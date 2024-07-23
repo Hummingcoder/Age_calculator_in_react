@@ -126,7 +126,7 @@ const App = () => {
               </label>
               <input
                 className={` ${
-                  birthdate.year > date.getFullYear ||
+                  birthdate.year > date.getFullYear() ||
                   (birthdate.year === "" && error)
                     ? "border-LightRed hover:border-LightRed"
                     : "border-OffWhite hover:border-OffBlack"
